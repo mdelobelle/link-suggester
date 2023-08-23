@@ -1,11 +1,10 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"id": "link-suggester",
+	"name": "Link Suggester",
+	"version": "0.0.1",
+	"minAppVersion": "1.4.0",
+	"description": "Suggest internal files based on a combination of keys and a query.",
+	"author": "mdelobelle",
+	"authorUrl": "https://github.com/mdelobelle",
 	"isDesktopOnly": false
 }
