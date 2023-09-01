@@ -72,13 +72,14 @@ export default class SettingTab extends PluginSettingTab {
         Commands Settings 
         -----------------------------------------
         */
-
+        /*
         const rulesSettings = this.createSettingGroup(
             'Rules',
             "All rules",
-            true
+            false
         )
-        new Setting(rulesSettings)
+        */
+        new Setting(this.containerEl)
             .setName("Add New Rule Setting")
             .setDesc("Add a new target phrase for which you want to create and suggester .")
             .addButton((button: ButtonComponent): ButtonComponent => {
@@ -92,7 +93,7 @@ export default class SettingTab extends PluginSettingTab {
                     });
             }).settingEl.addClass("no-border");
 
-        this.rulesContainer = rulesSettings.createDiv();
+        this.rulesContainer = this.containerEl.createDiv();
         this.buildRules();
 
     }

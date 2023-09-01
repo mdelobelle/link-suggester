@@ -4,7 +4,8 @@ import RuleSettingModal from "./RuleSettingModal";
 import { LinkSuggesterRule } from "./LinkSuggesterRule";
 
 export default class FolderSetting extends Setting {
-    private ruleDescriptionContainer: HTMLSpanElement;
+    private ruleDescriptionContainer: HTMLDivElement;
+    private targetPhraseContainer: HTMLSpanElement;
     private queryContainer: HTMLSpanElement;
 
     constructor(
@@ -22,11 +23,17 @@ export default class FolderSetting extends Setting {
 
     public setTextContentWithname(): void {
         const rule = this.linkSuggesterRule
+
+
         this.infoEl.textContent = "";
-        this.infoEl.addClass("setting-item")
-        this.ruleDescriptionContainer = this.infoEl.createEl("div", "Description")
+        this.infoEl.addClass("setting-item-content")
+        this.ruleDescriptionContainer = this.infoEl.createDiv("description")
         this.ruleDescriptionContainer.setText(rule.description)
-        this.queryContainer = this.infoEl.createSpan(rule.queryString)
+        this.targetPhraseContainer = this.ruleDescriptionContainer.createSpan("target-phrase")
+        this.targetPhraseContainer.setText(rule.targetPhrase)
+        this.queryContainer = this.infoEl.createSpan("query-string")
+        this.queryContainer.setText(rule.queryString)
+
     };
 
     private addPutBeforeButton(): void {

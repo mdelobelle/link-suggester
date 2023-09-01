@@ -43,15 +43,29 @@
             white-space: nowrap;
         }
 
-        &.narrow-title {
-            
-            .setting-item-info{
-                flex: 2;
-            }
+        .setting-item-info{
+            flex: 2;
+        }
 
-            .setting-item-control{
-                flex:2
+        .description{
+            white-space: nowrap;
+
+            .target-phrase{
+                color: var(--color-red);
+                margin-left: 0.5em;
+                font-style: italic;
+                opacity: 0.8;
             }
+        }
+
+        .query-string{
+            color: var(--text-muted);
+            font-size: var(--font-ui-smaller);
+            white-space: nowrap;
+        }
+
+        .setting-item-control{
+            flex:2
         }
     }
 
