@@ -6,5 +6,6 @@
 	"description": "Suggest internal files based on a combination of keys and a query.",
 	"author": "mdelobelle",
 	"authorUrl": "https://github.com/mdelobelle",
-	"isDesktopOnly": false
+	"isDesktopOnly": false,
+	"fundingUrl": "https://github.com/sponsors/mdelobelle/"
 }
